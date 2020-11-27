@@ -8,9 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+    var viewModel: HomeViewModel = HomeViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack {
+            Color.black
+                .edgesIgnoringSafeArea(.all)
+            // main vstack
+            
+            ScrollView(showsIndicators: false){
+                
+                LazyVStack {
+                    ForEach(viewModel.allCategories, id: \.self) { category in
+                        
+                        VStack {
+                            
+                            HStack {
+                                Text(category)
+                                    .font(.title3)
+                                    .bold()
+                                Spacer()
+                            }
+                            
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                LazyHStack {
+                                    ForEach(viewModel.getMovie(forCategory: category)) { movie in
+                                        StandardHomeMovie(movie: movie)
+                                            .frame(width: 100, height: 200)
+                                            .padding(.horizontal, 20)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .foregroundColor(.white)
     }
 }
 
