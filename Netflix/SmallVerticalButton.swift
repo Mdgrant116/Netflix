@@ -37,13 +37,14 @@ struct SmallVerticalButton: View {
             VStack {
                 Image(systemName: imageName)
                     .foregroundColor(.white)
+                    .padding(.bottom, 3.0)
                 
                 Text(text)
                     .foregroundColor(.white)
                     .font(.system(size: 14))
                     .bold()
             }
-            
+           
         })
     }
 }

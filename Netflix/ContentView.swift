@@ -18,12 +18,13 @@ struct ContentView: View {
             // main vstack
             
             ScrollView(showsIndicators: false){
-                
+               
                 LazyVStack {
-                    
-                    TopMoviePreview(movie: goldenCompass)
+                    TopRowButtons()
+                    TopMoviePreview(movie: mandalorian)
                         .frame(width: screen.width)
-//                        .padding(.top, -110)
+                        .padding(.top, -110)
+                        .zIndex(-1)
                     
                     ForEach(viewModel.allCategories, id: \.self) { category in
                         
@@ -57,5 +58,51 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct TopRowButtons: View {
+    var body: some View {
+        HStack {
+            Button(action: {
+                
+            }, label: {
+                Image("netflix_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50)
+            })
+            
+            
+            Spacer()
+            Button(action: {
+                
+            }, label: {
+                Text("TV Shows")
+                    .bold()
+            })
+            
+            Spacer()
+            Button(action: {
+                
+            }, label: {
+                Text("Movies")
+                    .bold()
+
+            })
+            
+            Spacer()
+            Button(action: {
+                
+            }, label: {
+                Text("My List")
+                    .bold()
+
+            })
+            
+        }
+        
+        .padding(.leading, 10)
+        .padding(.trailing, 30)
     }
 }
