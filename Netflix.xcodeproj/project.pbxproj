@@ -17,6 +17,7 @@
 		4E0E2E0E25719D9E00795AD1 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E2E0D25719D9E00795AD1 /* StandardHomeMovie.swift */; };
 		4E0E2E1125719EDA00795AD1 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E2E1025719EDA00795AD1 /* GlobalHelpers.swift */; };
 		4E0E2E142571A2EA00795AD1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E2E132571A2EA00795AD1 /* HomeViewModel.swift */; };
+		4E0E2E172571BCF200795AD1 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E2E162571BCF200795AD1 /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		4E0E2E0D25719D9E00795AD1 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		4E0E2E1025719EDA00795AD1 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		4E0E2E132571A2EA00795AD1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4E0E2E162571BCF200795AD1 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				4E0E2E0A25719CE600795AD1 /* Movie.swift */,
 				4E0E2E0D25719D9E00795AD1 /* StandardHomeMovie.swift */,
 				4E0E2E1025719EDA00795AD1 /* GlobalHelpers.swift */,
+				4E0E2E162571BCF200795AD1 /* TopMoviePreview.swift */,
 			);
 			path = Netflix;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				4E0E2E142571A2EA00795AD1 /* HomeViewModel.swift in Sources */,
 				4E0E2DF6257193D300795AD1 /* ContentView.swift in Sources */,
 				4E0E2E0E25719D9E00795AD1 /* StandardHomeMovie.swift in Sources */,
+				4E0E2E172571BCF200795AD1 /* TopMoviePreview.swift in Sources */,
 				4E0E2E0B25719CE600795AD1 /* Movie.swift in Sources */,
 				4E0E2DF4257193D300795AD1 /* NetflixApp.swift in Sources */,
 			);

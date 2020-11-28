@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var viewModel: HomeViewModel = HomeViewModel()
-    
+    let screen = UIScreen.main.bounds
     var body: some View {
         
         ZStack {
@@ -20,6 +20,11 @@ struct ContentView: View {
             ScrollView(showsIndicators: false){
                 
                 LazyVStack {
+                    
+                    TopMoviePreview(movie: goldenCompass)
+                        .frame(width: screen.width)
+//                        .padding(.top, -110)
+                    
                     ForEach(viewModel.allCategories, id: \.self) { category in
                         
                         VStack {
