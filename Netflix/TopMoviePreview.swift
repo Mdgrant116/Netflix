@@ -32,6 +32,7 @@ struct TopMoviePreview: View {
                     ForEach(movie.categories, id: \.self) {  category in
                         HStack {
                             Text(category)
+                                .font(.footnote)
 
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
@@ -43,7 +44,11 @@ struct TopMoviePreview: View {
                     }
 
                 }
-                Text("Poop")
+                HStack {
+                    Text("My List")
+                    Text("Play Button")
+                    Text("Info Button")
+                }
             }
 
         }
