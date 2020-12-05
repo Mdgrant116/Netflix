@@ -18,9 +18,10 @@
 		4E0E2E142571A2EA00795AD1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E2E132571A2EA00795AD1 /* HomeViewModel.swift */; };
 		4E0E2E172571BCF200795AD1 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E2E162571BCF200795AD1 /* TopMoviePreview.swift */; };
 		4E2F550C25727DBA0008BE5E /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F550B25727DBA0008BE5E /* SmallVerticalButton.swift */; };
-		4E2F550F2572834B0008BE5E /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F550E2572834B0008BE5E /* WhiteButton.swift */; };
+		4E2F550F2572834B0008BE5E /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F550E2572834B0008BE5E /* PlayButton.swift */; };
 		4E2F551925729C770008BE5E /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F551825729C770008BE5E /* MovieDetail.swift */; };
 		4E9FA572257BE535004AA3B4 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9FA571257BE535004AA3B4 /* Episode.swift */; };
+		4E9FA576257C11A3004AA3B4 /* CustomTabSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9FA575257C11A3004AA3B4 /* CustomTabSwitcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +37,10 @@
 		4E0E2E132571A2EA00795AD1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		4E0E2E162571BCF200795AD1 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		4E2F550B25727DBA0008BE5E /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
-		4E2F550E2572834B0008BE5E /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		4E2F550E2572834B0008BE5E /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		4E2F551825729C770008BE5E /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		4E9FA571257BE535004AA3B4 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		4E9FA575257C11A3004AA3B4 /* CustomTabSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSwitcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				4E2F551425729C240008BE5E /* Helper Views */,
 				4E2F551625729C310008BE5E /* Helpers */,
 				4E2F551825729C770008BE5E /* MovieDetail.swift */,
+				4E9FA575257C11A3004AA3B4 /* CustomTabSwitcher.swift */,
 			);
 			path = Netflix;
 			sourceTree = "<group>";
@@ -108,7 +111,7 @@
 				4E0E2E0D25719D9E00795AD1 /* StandardHomeMovie.swift */,
 				4E0E2E162571BCF200795AD1 /* TopMoviePreview.swift */,
 				4E2F550B25727DBA0008BE5E /* SmallVerticalButton.swift */,
-				4E2F550E2572834B0008BE5E /* WhiteButton.swift */,
+				4E2F550E2572834B0008BE5E /* PlayButton.swift */,
 			);
 			path = "Helper Views";
 			sourceTree = "<group>";
@@ -210,12 +213,13 @@
 				4E0E2DF6257193D300795AD1 /* ContentView.swift in Sources */,
 				4E0E2E0E25719D9E00795AD1 /* StandardHomeMovie.swift in Sources */,
 				4E0E2E172571BCF200795AD1 /* TopMoviePreview.swift in Sources */,
+				4E9FA576257C11A3004AA3B4 /* CustomTabSwitcher.swift in Sources */,
 				4E9FA572257BE535004AA3B4 /* Episode.swift in Sources */,
 				4E0E2E0B25719CE600795AD1 /* Movie.swift in Sources */,
 				4E0E2DF4257193D300795AD1 /* NetflixApp.swift in Sources */,
 				4E2F551925729C770008BE5E /* MovieDetail.swift in Sources */,
 				4E2F550C25727DBA0008BE5E /* SmallVerticalButton.swift in Sources */,
-				4E2F550F2572834B0008BE5E /* WhiteButton.swift in Sources */,
+				4E2F550F2572834B0008BE5E /* PlayButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
