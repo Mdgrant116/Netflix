@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var viewModel: HomeViewModel = HomeViewModel()
     let screen = UIScreen.main.bounds
+    
+    @State private var movieDetailToShow: Movie? = nil
     var body: some View {
         
         ZStack {
@@ -43,12 +45,26 @@ struct ContentView: View {
                                         StandardHomeMovie(movie: movie)
                                             .frame(width: 100, height: 200)
                                             .padding(.horizontal, 20)
+                                            .clipped()
+                                            .onTapGesture {
+                                                movieDetailToShow = movie
+                                            }
+                                           
                                     }
+                                    
                                 }
+                                
                             }
                         }
                     }
                 }
+            }
+            
+            if movieDetailToShow != nil {
+                MovieDetail(movie: movieDetailToShow!, movieDetailToShow: $movieDetailToShow)
+                   
+                    .animation(.easeIn)
+                    .transition(.opacity)
             }
         }
         .foregroundColor(.white)
