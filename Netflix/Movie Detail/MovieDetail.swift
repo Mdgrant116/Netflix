@@ -66,7 +66,7 @@ struct MovieDetail: View {
                         Spacer()
                     }
                     .padding(.leading, 20)
-                    CustomTabSwitcher(tabs: [.episodes, .trailers, .more])
+                    CustomTabSwitcher(tabs: [.episodes, .trailers, .more], movie: movie)
                 }
                 .padding(.horizontal, 7)
                

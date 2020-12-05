@@ -19,7 +19,8 @@ let exampleMovie1 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7])
 
 let exampleMovie2 = Movie(
     id: UUID().uuidString,
@@ -31,7 +32,8 @@ let exampleMovie2 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 
 let exampleMovie3 = Movie(
@@ -45,7 +47,8 @@ let exampleMovie3 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 
 let exampleMovie4 = Movie(
@@ -58,7 +61,8 @@ let exampleMovie4 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 
 let exampleMovie5 = Movie(
@@ -72,7 +76,8 @@ let exampleMovie5 = Movie(
     defaultEpisodeInfo: exampleEpisodeInfo1,
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 
 let exampleMovie6 = Movie(
@@ -86,7 +91,22 @@ let exampleMovie6 = Movie(
     promtionHeadline: "Watch Season 6 now!",
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
+
+let exampleMovie7 = Movie(
+    id: UUID().uuidString,
+    name: "Afterlife",
+    thumbnailURL: URL(string: "https://picsum.photos/200/305")!,
+    categories: ["Dystopian", "Exciting", "Suspensful"],
+    year: 2020, rating: "TV-MA",
+    numberOfSeasons: 6,
+    defaultEpisodeInfo: exampleEpisodeInfo1,
+    promtionHeadline: "Watch Season 6 now!",
+    creators: "Michael Grant, Robin Ellacott",
+    cast: "Michael Grant",
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 let goldenCompass = Movie(
     id: UUID().uuidString,
@@ -99,7 +119,8 @@ let goldenCompass = Movie(
     promtionHeadline: "Watch season 2 now!",
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 
 let mandalorian = Movie(
@@ -115,7 +136,8 @@ let mandalorian = Movie(
     promtionHeadline: "Watching season 2 now!",
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [])
 
 let lovecraftCountry = Movie(
     id: UUID().uuidString,
@@ -130,10 +152,13 @@ let lovecraftCountry = Movie(
     promtionHeadline: "Best rated show on Freshflix!",
     creators: "Michael Grant, Robin Ellacott",
     cast: "Michael Grant",
-    director: "Richard Parrott")
+    director: "Richard Parrott",
+    moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7])
 
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+var exampleMovies: [Movie] {
+    [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+}
 
 let exampleEpisodeInfo1 = CurrentEpisodeInfo(episodeName: "Beginnings and endings", description: "In the beginning there was nothing, then something happened, and now its ending, dramatically of course", season: 1, episode: 1)
 
